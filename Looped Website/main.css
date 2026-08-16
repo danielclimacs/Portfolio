@@ -1,0 +1,396 @@
+/* Main CSS for website */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+p {
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header styles */
+.navbar {
+    display: flex;
+    position: relative;
+    height: 60px;
+    z-index: 2;
+}
+
+.navbar-brand {
+    position: absolute;
+    left: 2%; 
+    margin-top: 1.8%;
+}
+
+.navbar-nav {
+    margin: -18px auto; 
+    padding-top: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    padding-bottom: 20px;
+    z-index: 0;
+}
+
+.navbar .nav-link {
+    margin: 0px 10px;
+    font-weight: 700; 
+    color: #136ad5;
+    z-index: 2;
+}
+
+.navbar-toggler {
+    margin-top: 1%;
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    border: none !important;
+}
+
+.navbar .btn {
+    font-weight: 700;
+    border: none;
+    background-color: #007bffe1;
+    color: #f4f4f4;
+    margin-left: 5px;
+    padding: 4px 8px;  
+    border-radius: 8px;   
+}
+
+.on-page {
+    color: #000000 !important;
+}
+    /* Main Section */
+
+section {
+    width: 100vw;
+    height: 100%;
+    margin-bottom: 10%;
+    animation: fadeIn;
+
+}
+
+    /* Top Section */
+.home-container {
+    padding-top: 2%;
+    background-color: #ffffff;
+}
+
+.blue-background {
+    margin-top: -80px;
+    padding-top: 90px;
+}
+
+.blue-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -50%;
+    width: 80%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px 0 0 30px;
+    background: #007BFF;
+    transform: skewX(-20deg);
+    z-index: 1;
+}
+
+.home-container .row {
+    position: relative;
+    z-index: 1; 
+}
+
+.text-home {
+    margin-left: 10%;
+    padding-top: 13%;
+    width: 100%;
+    /*Riane's*/
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: fadeInLeft 1.5s ease-out forwards;
+}
+
+.home-title {
+    font-size: 64px;
+    font-weight: 700;
+    color: rgb(19, 106, 213);
+}
+
+ main .btn {
+    font-size: 14px;
+    padding: 6px 11px;
+    border-radius: 25px;
+}
+
+.home-img {
+    display: flex;
+    margin-right: -10%;
+    /*Riane's*/
+    opacity: 0;
+    transform: scale(0.8);
+    animation: zoomIn 1.5s ease-out forwards;
+}
+
+.img-iphone {
+    width: 60%;
+    height: auto;
+}
+
+/* The App */
+
+.the-app {
+    margin-top: 15%;
+    animation: fadeIn 1.5s ease-in-out;
+
+}
+
+.the-app li {
+    list-style: none;
+    padding: 5%;
+    border-radius: 5px;
+    text-align: center;
+    color: #f4f4f4;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.the-app li:hover {
+    transform: scale(1.1);
+}
+
+.the-app a {
+    margin: 15% 0 0 -10%;
+
+}
+
+.title-link {
+    display: block; 
+    text-align: center; 
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.title-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Promises Section */
+
+.promise-section {
+    text-align: center; 
+    padding: 5% 10%;
+    animation: fadeIn 1.5s ease-in-out;
+
+}
+
+
+.promise-section .row {
+    padding-top: 120px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.promise-section .col-md {
+    flex: 1 1 30%; 
+    max-width: 300px; 
+    text-align: center; 
+    margin: 0 auto;
+}
+
+.promise-images {
+    width: 100%; 
+    max-width: 150px; 
+    height: auto;
+    margin: 0 auto 10px;
+}
+
+/* Our Mission Section */
+
+.what-to-expect-section {
+    padding: 5% 10%;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Rian's Section*/
+footer {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #136ad57e;
+    color: white;
+    padding: 30px 20px;
+    position: relative;
+    margin-top: 50px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+
+}
+
+.footer-logo {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
+
+footer .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    text-align: center;
+}
+
+footer .go-back {
+    position: absolute;
+    right: 40px; 
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer .go-back:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 0;
+    padding-top: 2px;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8); 
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@media (max-width: 768px) {
+    section {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+}
+
+
+/* Marco's Section */
+
+
+.section-1 h2 {
+    color:#007BFF;
+    text-align: center;
+    font-family: sans-serif;
+
+}
+
+
+.section-1 h3 {
+   text-align: center;
+   margin-top:20px
+}
+
+.section-1 p {
+    text-align: center;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.target-audience-section {
+    margin-top: 80px;
+}
+
+.user-testimonials {
+    margin-top: 90px;
+    margin-bottom: 90px
+}
+
+.user-testimonials p {
+    text-align: justify;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 40px;
+}
+
+.quote-name p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.why-choose-us {
+    margin-bottom: 90px;
+}
+
+.why-choose-us h3 {
+    margin-top: 30px
+}
